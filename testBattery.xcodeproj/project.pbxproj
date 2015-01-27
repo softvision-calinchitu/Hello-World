@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473BDA861A77C0E800241F7B /* Feature1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BDA851A77C0E800241F7B /* Feature1VC.m */; };
 		47D7547619B8A6A100FFA3F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547519B8A6A100FFA3F8 /* Foundation.framework */; };
 		47D7547819B8A6A100FFA3F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547719B8A6A100FFA3F8 /* CoreGraphics.framework */; };
 		47D7547A19B8A6A100FFA3F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547919B8A6A100FFA3F8 /* UIKit.framework */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		473BDA841A77C0E800241F7B /* Feature1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feature1VC.h; sourceTree = "<group>"; };
+		473BDA851A77C0E800241F7B /* Feature1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feature1VC.m; sourceTree = "<group>"; };
 		47D7547219B8A6A100FFA3F8 /* testBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7547519B8A6A100FFA3F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47D7547719B8A6A100FFA3F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +123,8 @@
 				47D7548A19B8A6A100FFA3F8 /* Main_iPad.storyboard */,
 				47D7548D19B8A6A100FFA3F8 /* ViewController.h */,
 				47D7548E19B8A6A100FFA3F8 /* ViewController.m */,
+				473BDA841A77C0E800241F7B /* Feature1VC.h */,
+				473BDA851A77C0E800241F7B /* Feature1VC.m */,
 				47D7549019B8A6A100FFA3F8 /* Images.xcassets */,
 				47D7547C19B8A6A100FFA3F8 /* Supporting Files */,
 			);
@@ -254,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D7548F19B8A6A100FFA3F8 /* ViewController.m in Sources */,
+				473BDA861A77C0E800241F7B /* Feature1VC.m in Sources */,
 				47D7548619B8A6A100FFA3F8 /* AppDelegate.m in Sources */,
 				47D7548219B8A6A100FFA3F8 /* main.m in Sources */,
 			);
@@ -470,6 +476,7 @@
 				47D754A919B8A6A100FFA3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47D754AA19B8A6A100FFA3F8 /* Build configuration list for PBXNativeTarget "testBatteryTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				47D754AC19B8A6A100FFA3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

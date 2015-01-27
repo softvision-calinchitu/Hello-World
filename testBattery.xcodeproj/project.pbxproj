@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18143BC91A77D1AE004F1DDB /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18143BC81A77D1AE004F1DDB /* QuestionsViewController.m */; };
 		473BDA861A77C0E800241F7B /* Feature1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BDA851A77C0E800241F7B /* Feature1VC.m */; };
 		47D7547619B8A6A100FFA3F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547519B8A6A100FFA3F8 /* Foundation.framework */; };
 		47D7547819B8A6A100FFA3F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547719B8A6A100FFA3F8 /* CoreGraphics.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18143BC71A77D1AE004F1DDB /* QuestionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QuestionsViewController.h; path = testBattery/QuestionsViewController/QuestionsViewController.h; sourceTree = "<group>"; };
+		18143BC81A77D1AE004F1DDB /* QuestionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QuestionsViewController.m; path = testBattery/QuestionsViewController/QuestionsViewController.m; sourceTree = "<group>"; };
 		473BDA841A77C0E800241F7B /* Feature1VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feature1VC.h; sourceTree = "<group>"; };
 		473BDA851A77C0E800241F7B /* Feature1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feature1VC.m; sourceTree = "<group>"; };
 		47D7547219B8A6A100FFA3F8 /* testBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,9 +87,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18143BCA1A77D1B3004F1DDB /* QuestionViewController */ = {
+			isa = PBXGroup;
+			children = (
+				18143BC71A77D1AE004F1DDB /* QuestionsViewController.h */,
+				18143BC81A77D1AE004F1DDB /* QuestionsViewController.m */,
+			);
+			name = QuestionViewController;
+			sourceTree = "<group>";
+		};
 		47D7546919B8A6A100FFA3F8 = {
 			isa = PBXGroup;
 			children = (
+				18143BCA1A77D1B3004F1DDB /* QuestionViewController */,
 				47D7547B19B8A6A100FFA3F8 /* testBattery */,
 				47D7549D19B8A6A100FFA3F8 /* testBatteryTests */,
 				47D7547419B8A6A100FFA3F8 /* Frameworks */,
@@ -259,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D7548F19B8A6A100FFA3F8 /* ViewController.m in Sources */,
+				18143BC91A77D1AE004F1DDB /* QuestionsViewController.m in Sources */,
 				473BDA861A77C0E800241F7B /* Feature1VC.m in Sources */,
 				47D7548619B8A6A100FFA3F8 /* AppDelegate.m in Sources */,
 				47D7548219B8A6A100FFA3F8 /* main.m in Sources */,

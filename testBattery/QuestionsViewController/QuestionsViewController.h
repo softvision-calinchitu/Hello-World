@@ -11,5 +11,6 @@
 @interface QuestionsViewController : UIViewController
 
 - (IBAction)DismissQuestionaire;
+- (IBAction)finishQuestionaire;
 
 @end

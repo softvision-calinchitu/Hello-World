@@ -83,6 +83,9 @@
                                 <state key="normal" title="Yes">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="vAh-fI-Dqe" kind="push" id="czA-0u-mkV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -113,6 +116,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sbu-Ks-ZgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1416" y="395"/>
+        </scene>
+        <!--Questions View Controller-->
+        <scene sceneID="D3b-9f-nkJ">
+            <objects>
+                <viewController id="vAh-fI-Dqe" customClass="QuestionsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Mk9-wl-aIh"/>
+                        <viewControllerLayoutGuide type="bottom" id="r09-UX-5fq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="b8c-IQ-hbl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do you like working with GIT ?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM2-0H-1Uf">
+                                <rect key="frame" x="43" y="104" width="234" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Glj-iq-vhr">
+                                <rect key="frame" x="140" y="488" width="41" height="30"/>
+                                <state key="normal" title="Finish">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="finishQuestionaire" destination="vAh-fI-Dqe" eventType="touchUpInside" id="ncK-qg-frn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="CM2-0H-1Uf" secondAttribute="centerX" id="4dw-JZ-gy0"/>
+                            <constraint firstItem="CM2-0H-1Uf" firstAttribute="top" secondItem="Mk9-wl-aIh" secondAttribute="bottom" constant="40" id="I60-XI-mLi"/>
+                            <constraint firstAttribute="centerX" secondItem="Glj-iq-vhr" secondAttribute="centerX" id="Sln-1o-9rB"/>
+                            <constraint firstItem="r09-UX-5fq" firstAttribute="top" secondItem="Glj-iq-vhr" secondAttribute="bottom" constant="50" id="ZFI-GF-UFI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vCI-QZ-PZ7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eiz-DL-Dow" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="395"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wtU-O0-emc">

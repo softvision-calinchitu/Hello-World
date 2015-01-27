@@ -37,4 +37,8 @@
 - (IBAction)DismissQuestionaire {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+- (IBAction)finishQuestionaire {
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+}
 @end

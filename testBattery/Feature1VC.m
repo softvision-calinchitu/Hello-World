@@ -10,6 +10,9 @@
 
 @implementation Feature1VC
 
-//This is only in master
+- (void)aNewStuff {
+}
+
+//and a new comment
 
 @end

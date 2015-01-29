@@ -10,6 +10,7 @@
 		18143BC91A77D1AE004F1DDB /* QuestionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18143BC81A77D1AE004F1DDB /* QuestionsViewController.m */; };
 		473BDA861A77C0E800241F7B /* Feature1VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BDA851A77C0E800241F7B /* Feature1VC.m */; };
 		473BDA891A77CA9A00241F7B /* Feature2.m in Sources */ = {isa = PBXBuildFile; fileRef = 473BDA881A77CA9A00241F7B /* Feature2.m */; };
+		473FF6A41A7A7022004FBC53 /* Kiwi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473FF6A31A7A7022004FBC53 /* Kiwi.framework */; };
 		47D7547619B8A6A100FFA3F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547519B8A6A100FFA3F8 /* Foundation.framework */; };
 		47D7547819B8A6A100FFA3F8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547719B8A6A100FFA3F8 /* CoreGraphics.framework */; };
 		47D7547A19B8A6A100FFA3F8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47D7547919B8A6A100FFA3F8 /* UIKit.framework */; };
@@ -44,6 +45,7 @@
 		473BDA851A77C0E800241F7B /* Feature1VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feature1VC.m; sourceTree = "<group>"; };
 		473BDA871A77CA9A00241F7B /* Feature2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feature2.h; sourceTree = "<group>"; };
 		473BDA881A77CA9A00241F7B /* Feature2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feature2.m; sourceTree = "<group>"; };
+		473FF6A31A7A7022004FBC53 /* Kiwi.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kiwi.framework; path = testBatteryTests/Kiwi/Kiwi.framework; sourceTree = "<group>"; };
 		47D7547219B8A6A100FFA3F8 /* testBattery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testBattery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D7547519B8A6A100FFA3F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		47D7547719B8A6A100FFA3F8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -81,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				473FF6A41A7A7022004FBC53 /* Kiwi.framework in Frameworks */,
 				47D7549819B8A6A100FFA3F8 /* XCTest.framework in Frameworks */,
 				47D7549A19B8A6A100FFA3F8 /* UIKit.framework in Frameworks */,
 				47D7549919B8A6A100FFA3F8 /* Foundation.framework in Frameworks */,
@@ -122,6 +125,7 @@
 		47D7547419B8A6A100FFA3F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				473FF6A31A7A7022004FBC53 /* Kiwi.framework */,
 				47D7547519B8A6A100FFA3F8 /* Foundation.framework */,
 				47D7547719B8A6A100FFA3F8 /* CoreGraphics.framework */,
 				47D7547919B8A6A100FFA3F8 /* UIKit.framework */,
@@ -445,6 +449,7 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/testBatteryTests/Kiwi",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testBattery/testBattery-Prefix.pch";
@@ -453,6 +458,12 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "testBatteryTests/testBatteryTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -467,10 +478,17 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(PROJECT_DIR)/testBatteryTests/Kiwi",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "testBattery/testBattery-Prefix.pch";
 				INFOPLIST_FILE = "testBatteryTests/testBatteryTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					XCTest,
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;

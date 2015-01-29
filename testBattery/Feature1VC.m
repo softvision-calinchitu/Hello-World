@@ -17,4 +17,7 @@
 
 //this was done under feat1
 
+- (void)miau {
+}
+
 @end

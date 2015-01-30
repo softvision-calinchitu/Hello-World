@@ -13,9 +13,9 @@ SPEC_BEGIN(MathSpec)
 //blblabla
 describe(@"Math", ^{
     it(@"is pretty cool", ^{
-        NSUInteger a = 16;
-        NSUInteger b = 26;
-        [[theValue(a + b) should] equal:theValue(45)];
+        NSUInteger a = 10;
+        NSUInteger b = 20;
+        [[theValue(a + b) should] equal:theValue(30)];
     });
 });
 
